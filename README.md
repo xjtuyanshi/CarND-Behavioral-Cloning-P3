@@ -113,7 +113,8 @@ Below is the model structure:
 |dense_2 (Dense)           |  (None, 10)             |   510       |
 |dropout_7 (Dropout)       |  (None, 10)             |   0         |
 |dense_3 (Dense)           |  (None, 1)              |   11        |
-The first 3 layers is for preprocessing the input data. |
+
+The first 3 layers is for preprocessing the input data.
 * Crop the images to exclude the sky and the driving car.
 * Resize the image to 66X200 to reach the required input image size same as NVIDIA model
 * Normalize images. <br/>
