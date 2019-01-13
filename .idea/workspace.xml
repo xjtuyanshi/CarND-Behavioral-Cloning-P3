@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da75c02f-2ce1-4a21-9aa6-ac8223617aa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New Text Document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/model_train-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/model_train-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/augmented_image_examples/darker_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/augmented_image_examples/darker_image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beta_simulator_windows/beta_simulator_Data/output_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/beta_simulator_windows/beta_simulator_Data/output_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drive.py" beforeDir="false" afterPath="$PROJECT_DIR$/drive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hist_angles.png" beforeDir="false" afterPath="$PROJECT_DIR$/hist_angles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.047470.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.047502.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.047830.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.050970.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.051598.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.056318.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.061655.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.064267.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.067487.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.079746.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model-0.092587.h5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_NVIDIA_201901110221.h5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model_train.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_train.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeup_template.md" beforeDir="false" afterPath="$PROJECT_DIR$/writeup_template.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +31,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/writeup_template.md">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="767">
-                <caret line="191" column="10" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
+              <first_editor relative-caret-position="3496">
+                <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -35,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-989">
-              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="15" />
+            <state relative-caret-position="23">
+              <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -52,8 +62,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/writeup_template.md" />
+        <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -68,6 +79,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -79,7 +91,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,18 +138,20 @@
       <option name="presentableId" value="Default" />
       <updated>1547274767610</updated>
       <workItem from="1547274775188" duration="955000" />
-      <workItem from="1547276880079" duration="8277000" />
+      <workItem from="1547276880079" duration="8989000" />
+      <workItem from="1547289600217" duration="630000" />
+      <workItem from="1547290869934" duration="19000" />
+      <workItem from="1547341611192" duration="1054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9232000" />
+    <option name="totallyTimeSpent" value="11647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1633" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.027301587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.057142857" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -167,19 +180,19 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-989">
-          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="15" />
+        <state relative-caret-position="23">
+          <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeup_template.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="767">
-            <caret line="191" column="10" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
+          <first_editor relative-caret-position="3496">
+            <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>

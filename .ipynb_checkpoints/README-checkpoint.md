@@ -89,31 +89,51 @@ their paper End to End Learning for Self-Driving Cars.
  behavior cloning.
 
 Below is the model structure:
-
-|Layer (type)       |             Output Shape       |       Param #  |
-|:---------------------:  |:--------------------------|-------------------:| 
-|cropping2d_1 (Cropping2D) |   (None, 90, 320, 3)    |     0         |
-| lambda (Lambda)          |    (None, 66, 200, 3)   |     0       |  
-| lambda_1 (Lambda)        |    (None, 66, 200, 3)   |     0       |  
-| conv2d (Conv2D)          |    (None, 31, 98, 24)    |    1824    |  
-| dropout (Dropout)       |     (None, 31, 98, 24)    |    0       |  
-|conv2d_1 (Conv2D)         |   (None, 14, 47, 36)     |   21636    | 
-|dropout_1 (Dropout)       |   (None, 14, 47, 36)   |     0        | 
-|conv2d_2 (Conv2D)        |    (None, 5, 22, 48)     |    43248    | 
-|dropout_2 (Dropout)       |   (None, 5, 22, 48)     |    0         |
-|conv2d_3 (Conv2D)        |   (None, 3, 20, 64)     |    27712     |
-|dropout_3 (Dropout)      |   (None, 3, 20, 64)     |    0         |
-|conv2d_4 (Conv2D)        |   (None, 1, 18, 64)     |    36928     |
-|dropout_4 (Dropout)      |   (None, 1, 18, 64)     |    0         |
-|flatten (Flatten)        |   (None, 1152)          |    0         |
-|dense (Dense)            |   (None, 100)           |    115300    |
-|dropout_5 (Dropout)       |  (None, 100)            |   0         |
-|dense_1 (Dense)           |  (None, 50)             |   5050      |
-|dropout_6 (Dropout)       |  (None, 50)             |   0         |
-|dense_2 (Dense)           |  (None, 10)             |   510       |
-|dropout_7 (Dropout)       |  (None, 10)             |   0         |
-|dense_3 (Dense)           |  (None, 1)              |   11        |
-The first 3 layers is for preprocessing the input data. |
+Layer (type)                 Output Shape              Param #   
+=================================================================
+cropping2d_1 (Cropping2D)    (None, 90, 320, 3)        0         
+_________________________________________________________________
+lambda (Lambda)              (None, 66, 200, 3)        0         
+_________________________________________________________________
+lambda_1 (Lambda)            (None, 66, 200, 3)        0         
+_________________________________________________________________
+conv2d (Conv2D)              (None, 31, 98, 24)        1824      
+_________________________________________________________________
+dropout (Dropout)            (None, 31, 98, 24)        0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 14, 47, 36)        21636     
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 14, 47, 36)        0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 5, 22, 48)         43248     
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 5, 22, 48)         0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 3, 20, 64)         27712     
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 3, 20, 64)         0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 1, 18, 64)         36928     
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 1, 18, 64)         0         
+_________________________________________________________________
+flatten (Flatten)            (None, 1152)              0         
+_________________________________________________________________
+dense (Dense)                (None, 100)               115300    
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 50)                5050      
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 50)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                510       
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 10)                0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 1)                 11        
+_________________________________________________________________
+The first 3 layers is for preprocessing the input data. 
 * Crop the images to exclude the sky and the driving car.
 * Resize the image to 66X200 to reach the required input image size same as NVIDIA model
 * Normalize images. <br/>
@@ -149,27 +169,24 @@ starting from edge of the track :
 
 Then I repeated this process on track two in order to get more data points.
 
-To augment the data sat, I also flipped images and angles thinking that this would improve the robustness of model.
-For example, here is an image that has then been flipped:  
-![alt text][image5]  
-![alt text][image6]  
+To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+![alt text][image5]
+![alt text][image6]
+
 
 Besides, I also decreased the brightness randomly for same images.
-![alt text][image7]  
+![alt text][image7]
 Lastly, I randomly removed 20% of center camera images to make the model not quite biased to center.
 
 
 After the collection process, I had 48134 number of data points and the distribution of data is:
-
 ![alt text][image8]
-
-I didn't use generators to avoid the memory issue as generator's training speed is way slower than
+ I didn't use generators to avoid the memory issue as generator's training speed is way slower than
  than directly load all images to train. (Code for generator can be found in the model_train.ipynb)
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 150 as evidenced by following chart.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by following chart.
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
-
 ![alt text][image9]
 
 The final video can be found in  **[YouTube](https://youtu.be/-O3C6sFyzTk)**

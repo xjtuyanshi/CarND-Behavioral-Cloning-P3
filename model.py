@@ -128,8 +128,6 @@ plt.show()
 # hyper prameters
 N_EPOCHS = 512
 BATCH_SIZE = 1024
-learning_rate = 0.0001
-
 ##NVIDIA MODEL
 model = Sequential()
 # Preprocess incoming data, centered around zero with small standard deviation
